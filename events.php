@@ -1,4 +1,4 @@
-<h1>Категории задач:</h1>
+<h1>События:</h1>
 <table border='1'>
     <?php
     $result = $conn->query("SELECT * FROM event");
@@ -10,7 +10,7 @@
     }
     ?>
 </table>
-<h2>Создание категории</h2>
+<h2>Создание события</h2>
 <form method="get" action="insert.php">
     <input type="text" name="title">
     <input type="date" name="start">
