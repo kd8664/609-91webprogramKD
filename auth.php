@@ -8,9 +8,6 @@ if (isset($_POST["login"]) and $_POST["login"] != '') {
         $stmt = $conn->prepare($sql);
         $stmt->bindValue(':login', $_POST['login']);
         $stmt->execute();
-        //$_SESSION['msg'] = "Вы успешно вошли в систему";
-        // return generated id
-        // $id = $pdo->lastInsertId('id');
 
     } catch (PDOexception $error) {
         $msg = "Ошибка аутентификации: " . $error->getMessage();

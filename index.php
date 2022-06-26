@@ -9,6 +9,5 @@ if (isset($_SESSION['login'])){
 else{
     echo 'Войдите в сиситему для просмотра и создания событий';
 }
-
 require "msg.php";
 $_SESSION['msg'] = '';
